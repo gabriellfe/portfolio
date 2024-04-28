@@ -13,7 +13,7 @@
  * Btn............................Buttons style
  *
  * MAIN CONTENT
- * Contact........................Contact style
+ * college........................college style
  * Media queries..................Responsive for all devices
  */
 
@@ -32,27 +32,27 @@
 
 
 /*-----------------------------------*\
-  #CONTACT
+  #college
 \*-----------------------------------*/
 
-.contact {
+.college {
   background-color: var(--maximum-yellow-red_a10);
   padding-block-start: calc(var(--section-padding) + 60px);
 }
 
-.contact .container {
+.college .container {
   display: grid;
   gap: 48px;
 }
 
-.contact-form {
+.college-form {
   background-color: var(--white);
   padding: 25px;
 }
 
-.contact-text { margin-block: 5px 30px; }
+.college-text { margin-block: 5px 30px; }
 
-.contact .label { margin-block-end: 8px; }
+.college .label { margin-block-end: 8px; }
 
 .input-field {
   padding: 10px 12px;
@@ -71,15 +71,15 @@ textarea {
 }
 
 
-.contact-list .contact-item {
+.college-list .college-item {
   display: flex;
   align-items: flex-start;
   gap: 15px;
 }
 
-.contact-list .contact-item:not(:last-child) { margin-block-end: 35px; }
+.college-list .college-item:not(:last-child) { margin-block-end: 35px; }
 
-.contact-list .item-icon {
+.college-list .item-icon {
   color: var(--jet);
   width: 55px;
   height: 55px;
@@ -88,9 +88,9 @@ textarea {
   flex-shrink: 0;
 }
 
-.contact-list .item-icon ion-icon { font-size: 2.5rem; }
+.college-list .item-icon ion-icon { font-size: 2.5rem; }
 
-.contact .label-lg {
+.college .label-lg {
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -98,7 +98,7 @@ textarea {
   margin-block-end: 5px;
 }
 
-.contact .body-lg {
+.college .body-lg {
   color: black;
   word-break: break-all;
 }
@@ -116,7 +116,7 @@ textarea {
 
 @media (min-width: 768px) {
 
-  .contact-form { padding: 35px; }
+  .college-form { padding: 35px; }
 
   .wrapper {
     display: grid;
@@ -136,13 +136,13 @@ textarea {
 
 @media (min-width: 992px) {
 
-  .contact .container {
+  .college .container {
     grid-template-columns: 1fr 0.9fr;
     align-items: center;
     gap: 20px;
   }
 
-  .contact-content {
+  .college-content {
     width: 70%;
     margin-inline: auto;
   }
