@@ -1,0 +1,78 @@
+<main>
+  <article>
+
+    <!-- 
+      - #CONTACT
+    -->
+
+    <section class="section contact has-bg-image" aria-labelledby="contact-label"
+      style="background-image: url('./assets/images/contact-bg.png')">
+      <div class="container">
+
+        <form action="" [formGroup]="formEmail" class="contact-form">
+
+          <h2 class="headline-sm" id="contact-label">Entre em Contato</h2>
+
+          <div class="wrapper">
+
+            <div>
+              <label for="name" class="label">Primeiro nome</label>
+
+              <input formControlName="primeiroNome" type="text" name="name" id="name" placeholder="Nome *" required class="input-field">
+            </div>
+
+            <div>
+              <label for="email" class="label">E-mail </label> 
+
+              <input formControlName="email" type="email" name="email" id="email" placeholder="Email *" required class="input-field">
+            </div>
+
+          </div>
+
+          <label for="subject" class="label">Assunto</label>
+          <input formControlName="assunto" type="text" name="subject" id="subject" placeholder="Assunto *" class="input-field">
+
+          <label for="message" class="label">Mensagem </label>
+          <textarea formControlName="mensagem" name="message" id="message" placeholder="Mensagem *" required class="input-field"></textarea>
+
+          <button (click)="onSend()" [disabled]="!formEmail.valid" class="btn btn-tertiary">Enviar Mensagem</button>
+
+        </form>
+
+        <div class="contact-content">
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+                <ion-icon name="call" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">Telefone</p>
+
+                <a href="tel:+011236548096" class="body-lg disabled">11 95324-6497</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+              </div>
+
+              <div>
+                <p class="label-lg">E-Mail</p>
+
+                <a href="tel:gabriell.marquesfe@hotmail.com" class="body-lg disabled">{{ email }}</a>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
