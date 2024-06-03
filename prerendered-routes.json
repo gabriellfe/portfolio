@@ -1,9 +1,0 @@
-{
-  "routes": [
-    "/",
-    "/contact",
-    "/home",
-    "/portfolio",
-    "/service"
-  ]
-}
